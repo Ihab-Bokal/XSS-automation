@@ -24,3 +24,15 @@ class Scraper:
             print(f"Abort due to Error: {e}")
         finally:
             self.driver.quit()
+
+
+if __name__ == "__main__":
+    target_url: str = "https://www.browserstack.com/guide/how-ai-in-visual-testing-is-evolving"
+
+    # Define the url init params
+    firefox_options: Options = Options()
+    firefox_options.add_argument("--headless")  # Don't launch a visual instance
+    my_scraper = Scraper(target_url, webdriver.Firefox(options=firefox_options))
+
+    input_field_names = my_scraper.scrape_input_fields()
+    print(f"Input field names: {input_field_names}")

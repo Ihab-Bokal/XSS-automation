@@ -9,7 +9,7 @@ unwanted_inputs: list[str] = [
 
 
 class Scraper:
-    def __init__(self, url, driver):
+    def __init__(self, url: str, driver: webdriver):
         self.url = url
         self.driver = driver
 
@@ -27,7 +27,7 @@ class Scraper:
 
 
 if __name__ == "__main__":
-    target_url: str = "https://www.browserstack.com/guide/how-ai-in-visual-testing-is-evolving"
+    target_url: str = "https://0a1c004804e990b482319dce00550056.web-security-academy.net/"  # "https://0a1c004804e990b482319dce00550056.web-security-academy.net/"
 
     # Define the url init params
     firefox_options: Options = Options()

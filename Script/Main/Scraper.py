@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
 from bs4 import BeautifulSoup
 
 unwanted_inputs: list[str] = [
@@ -24,3 +22,9 @@ class Scraper:
             print(f"Abort due to Error: {e}")
         finally:
             self.driver.quit()
+
+
+"""
+from selenium import webdriver  # to create an instance of the driver param
+from selenium.webdriver.firefox.options import Options  # to define insert the --headless option  
+"""

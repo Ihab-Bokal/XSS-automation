@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to **XSS-Automation**, where we dive headfirst into the fascinating world of web security! 🚀
+Welcome to **xssmap**, where we dive headfirst into the fascinating world of web security! 🚀
 
 ## Project Overview
 
